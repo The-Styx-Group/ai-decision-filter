@@ -1,0 +1,22 @@
+{
+  "name": "ai-decision-filter",
+  "version": "1.0.0",
+  "description": "Walks a small business owner through deciding whether a process should use AI, be automated more simply, or just be fixed first — with a live process map and an ownership plan.",
+  "skills": "./skills/",
+  "author": "Kyle Boyd",
+  "license": "MIT",
+  "repository": "https://github.com/kr8vka0z/ai-decision-filter",
+  "keywords": [
+    "small business",
+    "process improvement",
+    "automation",
+    "ai adoption",
+    "decision framework",
+    "consulting"
+  ],
+  "interface": {
+    "displayName": "AI Decision Filter",
+    "description": "Should this process use AI at all? A structured interview that ends in a defensible answer.",
+    "category": "Productivity"
+  }
+}

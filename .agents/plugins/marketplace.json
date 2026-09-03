@@ -1,0 +1,20 @@
+{
+  "name": "ai-decision-filter",
+  "interface": {
+    "displayName": "AI Decision Filter"
+  },
+  "plugins": [
+    {
+      "name": "ai-decision-filter",
+      "source": {
+        "source": "local",
+        "path": "./plugins/ai-decision-filter"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
