@@ -116,13 +116,20 @@ plugins/ai-decision-filter/
 ├── .codex-plugin/plugin.json
 └── skills/
     ├── ai-decision-filter/
-    │   ├── SKILL.md                    the interview and the decision logic
+    │   ├── SKILL.md                    the spine — the phases, in order
     │   └── references/
+    │       ├── intake.md               the interview questions
     │       ├── diagrams.md             how the diagrams get drawn
+    │       ├── decide.md               the scoring sheet and the money math
+    │       ├── tiers.md                the five levels, and picking one
+    │       ├── handover.md             ownership, the decision, the worksheet
     │       └── example-flowchart.html  a worked process map
     └── process-re-review/
         └── SKILL.md                    revisiting a decision later
 ```
+
+`SKILL.md` runs the session and pulls in each reference file at the phase that
+needs it.
 
 The diagrams are self-contained HTML files — open them in any browser, no software
 needed. They use Google Fonts, so they look best online.
