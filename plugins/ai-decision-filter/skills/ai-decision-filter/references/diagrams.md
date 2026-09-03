@@ -11,6 +11,19 @@ else.
 
 ---
 
+## First: does this need a diagram at all?
+
+- **Five steps or fewer, one person, no branches** — use a table, not a diagram. Two
+  columns: step, who does it. A five-box flowchart is decoration.
+- **Three or more people touching it** — draw it in lanes, one horizontal lane per
+  person, boxes placed in the lane of whoever does them. The lanes are the point: a
+  step nobody can place, or a lane that's empty in the middle of the process, is the
+  ownership gap the owner has been living with. Nothing else in this exercise shows
+  it as fast.
+- **Otherwise** — the ordinary top-to-bottom flowchart below.
+
+---
+
 ## Non-negotiable rules
 
 1. **Shape carries meaning, not color.**
@@ -83,6 +96,18 @@ Draw what actually happens today, not the tidy version:
 Add a legend strip at the bottom explaining the shapes. The example file shows the
 pattern.
 
+**Lanes, when three or more people are involved.** Divide the canvas into horizontal
+bands, one per person, name each band on the left in muted small caps, and separate
+them with a thin `muted` rule. Steps sit in the band of whoever performs them. Flow
+still runs generally left to right across the lanes; an arrow crossing a lane
+boundary is a handoff, and handoffs are where the delay lives — label the wait on
+those arrows specifically. Keep the same shapes, colors, and spacing rules.
+
+**Saving it.** Name the file `<process-name>-process-map.html` and save it next to
+the worksheet, so a later review can open both. If you can't save files, put the
+full HTML in a code block and tell them to paste it into a text file and rename it
+to end in `.html`.
+
 ---
 
 ## The maintenance loop (Phase 8)
@@ -110,7 +135,8 @@ right, bottom right, bottom left, left — and connect with right-angled arrows.
 Don't attempt curved arcs; straight segments read fine.
 
 This is the diagram the owner keeps. Put the review date and owner name in it, in
-text, so a printed copy is self-explanatory.
+text, so a printed copy is self-explanatory. Name the file
+`<process-name>-maintenance-loop.html`.
 
 ---
 

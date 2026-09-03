@@ -1,7 +1,7 @@
 {
   "name": "ai-decision-filter",
-  "version": "1.0.0",
-  "description": "Walks a small business owner through deciding whether a process should use AI, be automated more simply, or just be fixed first — with a live process map and an ownership plan.",
+  "version": "1.1.0",
+  "description": "Walks a small business owner through deciding whether a process should use AI, be automated more simply, or just be fixed first — with a live process map and an ownership plan. Includes a re-review skill for revisiting the decision later.",
   "skills": "./skills/",
   "author": "Kyle Boyd",
   "license": "MIT",

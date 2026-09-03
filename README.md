@@ -17,6 +17,10 @@ It is designed to talk you out of AI when AI is the wrong answer.
 
 ## What it actually does
 
+**0. Checks it's worth doing first.** Three questions — how often, how many hands-on
+minutes, what happens if it goes wrong. Under about four hours a month and it tells
+you so in two minutes instead of interviewing you for forty.
+
 **1. Interviews you.** One question at a time, in plain language — who touches the
 process, how long it takes, how often it runs, where it breaks, what happens when
 it goes wrong.
@@ -42,14 +46,33 @@ review time subtracted, compared against what the fix costs.
 | **0 — No AI** | Fix the process, or use ordinary automation. The most common correct answer. |
 | **1 — Chatbot** | Staff need paid AI accounts and real training. A person is in the loop every time. |
 | **2 — Work assistant** | A shared assistant set up with your files, policies, and templates so answers are consistent and specific to you. |
+| **2.5 — Automation with an AI step** | An off-the-shelf automation tool starts the process on its own, hands the messy part to AI, and waits for a person to approve. Where most small businesses actually land. |
 | **3 — Custom build** | Software connecting AI to your systems, running unattended. Needs a developer and permanent maintenance. Almost nobody should start here. |
+
+If the process touches patient records, customer financial details, or payments, it
+doesn't refuse — it tells you which kind of account the work is allowed to happen
+on, and what the vendor has to have signed.
 
 **7. Decides who owns it.** A named person, a review schedule, what counts as a bad
 output, what it's never allowed to do alone, and the conditions under which you turn
 it off. Ends with a second diagram of that maintenance loop, which is the one you
 pin up.
 
-You finish with a one-page written decision and two diagram files.
+You finish with a one-page written decision, two diagram files, and a worksheet
+holding everything the session captured.
+
+---
+
+## Coming back to it later
+
+The plugin includes a second skill, **Process Re-Review**. Hand it the worksheet or
+the written decision and it picks the process back up — checks what changed, compares
+what actually happened against what was predicted, redraws the map, and lands on one
+of five answers: holding, adjust, move up a tier, move down or stop, or the process
+changed enough to start over.
+
+Use it when your review date comes up, when the process changes, or to finish a
+session that got interrupted.
 
 ---
 
@@ -70,9 +93,9 @@ To pick up later updates:
 codex plugin marketplace upgrade ai-decision-filter
 ```
 
-**Note on availability:** ChatGPT Skills are currently on Business, Enterprise,
-Healthcare, and Edu plans, and a workspace admin can switch them off. If you don't
-see a Skills tab under Plugins, your account doesn't have them yet.
+**Note on availability:** tested working on a personal ChatGPT Pro account. If you
+don't see a Skills tab under Plugins, your account doesn't have them yet — on a
+workspace plan an admin can switch them off.
 
 ## Use it
 
@@ -91,11 +114,14 @@ which one hurts most.
 ```
 plugins/ai-decision-filter/
 ├── .codex-plugin/plugin.json
-└── skills/ai-decision-filter/
-    ├── SKILL.md                        the interview and the decision logic
-    └── references/
-        ├── diagrams.md                 how the diagrams get drawn
-        └── example-flowchart.html      a worked process map
+└── skills/
+    ├── ai-decision-filter/
+    │   ├── SKILL.md                    the interview and the decision logic
+    │   └── references/
+    │       ├── diagrams.md             how the diagrams get drawn
+    │       └── example-flowchart.html  a worked process map
+    └── process-re-review/
+        └── SKILL.md                    revisiting a decision later
 ```
 
 The diagrams are self-contained HTML files — open them in any browser, no software
