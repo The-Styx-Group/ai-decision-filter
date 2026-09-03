@@ -58,7 +58,7 @@ You finish with a one-page written decision and two diagram files.
 You need the ChatGPT desktop app or the Codex command line tool.
 
 ```
-codex plugin marketplace add kr8vka0z/ai-decision-filter
+codex plugin marketplace add The-Styx-Group/ai-decision-filter
 ```
 
 Then open the plugin browser, install **AI Decision Filter**, and start a new
